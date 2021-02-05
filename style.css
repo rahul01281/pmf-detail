@@ -352,7 +352,7 @@ section.scrollspy p {
   background-color: #4caf50;
 }
 
-/* .finalbutton {
+.finalbutton {
   transition: all 0.2s;
 }
 
@@ -361,4 +361,4 @@ section.scrollspy p {
 }
 .show2 {
   opacity: 1;
-} */
+}
