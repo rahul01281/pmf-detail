@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   background: #f5f5f5;
   color: #61665f;
 }
@@ -151,23 +153,6 @@ body {
   background-color: #4caf50;
 }
 
-.joinbutton {
-  background-color: #6dbd46;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.joinbutton:hover {
-  background-color: #4caf50;
-}
-
 .header {
   padding: 21px;
   /* background: #1abc9c; */
@@ -215,21 +200,6 @@ header ul li a:hover {
 .top {
   align-items: center;
 }
-
-/* .container {
-  float: right;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  -webkit-animation: gradientBG 15s ease infinite;
-  animation: gradientBG 15s ease infinite;
-  text-align: center;
-  color: white;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-} */
 
 .container {
   padding-right: 15px;
@@ -285,6 +255,28 @@ header ul li a:hover {
   /* border-left-color: #d81b60; */
 }
 
+@media (max-width: 768px) {
+  #indicator ul li {
+    float: left;
+    width: calc(100% - 16px);
+    font-size: 11px;
+    padding: 12px 8px;
+    border-left-color: #6dbd46;
+    /* border-left-color: #d81b60; */
+  }
+}
+
+@media (max-width: 600px) {
+  #indicator ul li {
+    float: left;
+    width: calc(100% - 16px);
+    font-size: 9px;
+    padding: 12px 8px;
+    border-left-color: #6dbd46;
+    /* border-left-color: #d81b60; */
+  }
+}
+
 #indicator ul li.spy-active {
   color: #6dbd46;
   /* color: #D81B60; */
@@ -307,9 +299,18 @@ section.scrollspy h2 {
   float: left;
   width: 100%;
   text-align: center;
-  padding: 12px 0;
-  font-size: 23px;
+  font-size: 36px;
   color: #454545;
+}
+
+@media (max-width: 761px) {
+  section.scrollspy h2 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: calc(1.525rem + (2.5 - 1.525) * ((100vw - 20rem) / (48 - 20)));
+    color: #454545;
+  }
 }
 
 section.scrollspy h3 {
@@ -322,3 +323,42 @@ section.scrollspy h3 {
   color: #454545;
   border-left: 3px solid #6dbd46;
 }
+
+section.scrollspy p {
+  font-size: 16px;
+}
+
+.joinbutton {
+  bottom: 25%;
+  position: fixed;
+  background: #6dbd46;
+  left: 3%;
+  width: 15%;
+  height: 10%;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.joinbutton p {
+  color: white;
+  text-align: center;
+  margin: auto 0;
+  font-size: 2vw;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.joinbutton:hover {
+  background-color: #4caf50;
+}
+
+/* .finalbutton {
+  transition: all 0.2s;
+}
+
+.hide2 {
+  opacity: 0;
+}
+.show2 {
+  opacity: 1;
+} */

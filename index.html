@@ -52,7 +52,7 @@
         <div class="content">
         
             <section class="scrollspy" spy-title="About Program">
-                <h2 style="text-decoration: underline;">About Program</h2>
+                <h2>About Program</h2>
                 <p>Image if you could reach a stage where you no longer craved sugar.</p>
         
                 <p>We believe breaking the addiction to sugar consists of 3 forces:</p>
@@ -84,7 +84,7 @@
             </section>
         
             <section class="scrollspy" spy-title="What You'll Get">
-                <h2 style="text-decoration: underline;">What You'll Get</h2>
+                <h2>What You'll Get</h2>
                 <p>You will have special access to:</p>
                 <ul>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, harum?</li>
@@ -95,9 +95,25 @@
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, harum?</li>
                 </ul>
             </section>
+
+            <section class="scrollspy" spy-title="Testimonials">
+                <h2>Testimonials</h2>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem praesentium enim sit repellat animi eos pariatur ut
+                perspiciatis, deserunt fuga quaerat magni hic eum? Aliquam, tempore ratione itaque impedit consequatur eligendi possimus
+                commodi quaerat iste explicabo maiores eveniet reiciendis consectetur eius dicta facere, nobis repellat cupiditate unde,
+                obcaecati sapiente aspernatur."<br><br>- Mithun Mehta</p>
+                <hr>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem praesentium enim sit repellat animi eos pariatur ut
+                    perspiciatis, deserunt fuga quaerat magni hic eum? Aliquam, tempore ratione itaque impedit consequatur eligendi
+                    possimus
+                    commodi quaerat iste explicabo maiores eveniet reiciendis consectetur eius dicta facere, nobis repellat cupiditate
+                    unde,
+                    obcaecati sapiente aspernatur."<br><br>- Forum Shah</p>
+                <hr>
+            </section>
         
             <section class="scrollspy" spy-title="About Knowledge Partner">
-                <h2 style="text-decoration: underline;">About Knowledge Partner</h2>
+                <h2>About Knowledge Partner</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt provident quidem quos nam officia
                     accusantium
@@ -115,7 +131,7 @@
             </section>
         
             <section class="scrollspy" spy-title="Plans">
-                <h2 style="text-decoration: underline;">Plans</h2>
+                <h2>Plans</h2>
                 <p style="color: #6dbd46;">No Sugar Challenge by Ashdin Level 1 (Reg. 2499)</p>
                 <p>
                     <strong>Duration:</strong> 32 Days
@@ -127,7 +143,7 @@
         
         
             <section class="scrollspy" spy-title="Terms of Service">
-                <h2 style="text-decoration: underline;">Terms of Service</h2>
+                <h2>Terms of Service</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quibusdam quidem atque corporis quas
                     inventore
                     impedit id aliquid sit quia, blanditiis illum. Hic, tempore! In dicta vero consequatur, voluptatem, quam ad
@@ -142,12 +158,17 @@
                     consectetur
                     ea? Porro eaque ex ad veritatis exercitationem.</p>
             </section>
+            <div id="some" class="finalbutton hide2">
+                <button class="joinbutton"><p>Join Now</p></button>
+            </div>
 
-            <button class="joinbutton">Join Now</button>
-        
         </div>
 
-        <div id="myID" class="bottomMenu hide"><div id="indicator"></div></div>
+        
+        <div id="myID" class="bottomMenu hide">
+            <div id="indicator"></div>
+        </div>
+        
 
         <!-- <div class="container">
             <h2>Feel free to contribute (:</h2>
@@ -166,7 +187,7 @@
                 element: indicator
             });
 
-            indicator.style.top = 'calc(50vh - ' + (indicator.offsetHeight / 2) + 'px)';
+            indicator.style.top = 'calc(30vh - ' + (indicator.offsetHeight / 2) + 'px)';
         </script>
 
         <script>
@@ -174,7 +195,7 @@
 
             var myScrollFunc = function () {
                 var y = window.scrollY;
-                if (y >= 400) {
+                if (y >= 500) {
                     myID.className = "bottomMenu show"
                 } else {
                     myID.className = "bottomMenu hide"
@@ -182,6 +203,28 @@
             };
 
             window.addEventListener("scroll", myScrollFunc);
+        </script>
+
+        <!-- <script>
+            myID2 = document.getElementById("some");
+
+            var myScrollFunc2 = function () {
+                var y = window.scrollY;
+                if (y >= 500) {
+                    myID2.className = "finalbutton show2"
+                } else {
+                    myID2.className = "finalbutton hide2"
+                }
+            };
+
+            window.addEventListener("scroll", myScrollFunc2);
+        </script> -->
+
+        <script>
+            var video = document.querySelector('video');
+            video.addEventListener('ended', function () {
+                video.load();
+            });
         </script>
     </body>
 </html>
