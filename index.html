@@ -12,18 +12,18 @@
 
         <script src="ScrollSpy.min.js"></script>
 
-        <header>
-            <div class="header bg-dark">
-                <img src="logo.png" height="30" width="160" alt="">
+        <div class="header show-header" id="headerID">
+            <div class="container">
+                <img src="logo.png" height="30" width="160" alt="" />
                 <ul>
                     <li><a href="#">Programs</a></li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-        </header>
+        </div>      
 
-        <div id="header" style=" background: black; display: flex; justify-content: space-evenly; ">
+        <div id="header" style=" background: black; display: flex; justify-content: space-evenly;">
             <div class="a">
         
                 <img src="poster1.jpg" width="100%" height="100%">
@@ -32,9 +32,11 @@
                     <p>Feb 21, 2021</p>
                 </div>
                 <div>
-                    <button class="posterbutton">
-                        <p>Join Now</p>
-                    </button>
+                    <a href="">
+                        <button class="posterbutton">
+                            <p>Join Now</p>
+                        </button>
+                    </a>
                 </div>
         
             </div>
@@ -159,10 +161,39 @@
                     ea? Porro eaque ex ad veritatis exercitationem.</p>
             </section>
             <div id="some" class="finalbutton hide2">
-                <button class="joinbutton"><p>Join Now</p></button>
+                <a href=""><button class="joinbutton">
+                    <p>Join Now</p>
+                </button></a>
             </div>
 
         </div>
+
+        <footer>
+            <div class="container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="footer-content text-center">
+                                <div class="footer-logo">
+                                    <img src="https://www.planmyfood.com/assets/frontend/img/logo.png" alt="">
+                                </div>
+                                <div class="privacy">
+                                    <a href="https://www.planmyfood.com/privacy">
+                                        <p>Privacy Policy | </p>
+                                    </a>
+                                    <a href="https://www.planmyfood.com/terms">
+                                        <p>Terms & Conditions</p>
+                                    </a>
+                                </div>
+                                <div class="copyright">
+                                    <p>©copyright 2017 MAJA Solutions LLP | All right reserved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         
         <div id="myID" class="bottomMenu hide">
@@ -187,7 +218,7 @@
                 element: indicator
             });
 
-            indicator.style.top = 'calc(30vh - ' + (indicator.offsetHeight / 2) + 'px)';
+            indicator.style.top = 'calc(35vh - ' + (indicator.offsetHeight / 2) + 'px)';
         </script>
 
         <script>
