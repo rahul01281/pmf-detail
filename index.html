@@ -1,261 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Detail page</title>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="ScrollSpy.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ScrollSpy.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
 
-        <script src="ScrollSpy.min.js"></script>
+<body>
+    <script src="ScrollSpy.min.js"></script>
 
-        <div class="header show-header" id="headerID">
-            <div class="container">
-                <img src="logo.png" height="30" width="160" alt="" />
-                <ul>
-                    <li><a href="#">Programs</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+    <div class="header show" id="headerID">
+        <div class="container">
+            <img src="logo.png" height="30" width="160" alt="" />
+            <ul>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        myID3 = document.getElementById("headerID");
+
+        var myScrollFunc3 = function () {
+            var y = window.scrollY;
+            if (y >= 70) {
+                myID3.className = "header hide3"
+            } else {
+                myID3.className = "header show3"
+            }
+        };
+
+        window.addEventListener("scroll", myScrollFunc3);
+    </script>
+
+    <div id="header" class="topHeader">
+        <div class="a">
+            <img src="poster2.jpg" width="100%" height="100%" alt="">
+            <div class="startdate">
+                <p>Start Date:</p>
+                <p>Feb 21, 2021</p>
             </div>
-        </div>      
-
-        <div id="header" style=" background: black; display: flex; justify-content: space-evenly;">
-            <div class="a">
-        
-                <img src="poster1.jpg" width="100%" height="100%">
-                <div class="startdate">
-                    <p>Start Date:</p>
-                    <p>Feb 21, 2021</p>
-                </div>
-                <div>
-                    <a href="">
-                        <button class="posterbutton">
-                            <p>Join Now</p>
-                        </button>
-                    </a>
-                </div>
-        
+            <div>
+                <a href="#">
+                    <button class="posterbutton">
+                        <p>Join Now</p>
+                    </button>
+                </a>
             </div>
-            <div class="b">
-                <img src="phone1.jpg" alt="" width="100%" height="100%">
-                <div class="phoneVideo">
-                    <video controls poster="thumbnail.jpg" style="outline: none;">
-                        <source src="sampleVideoResize.mp4" type="video/mp4">
 
-                    </video>
-                </div>
+        </div>
+
+        <div class="b">
+            <img src="phone1.jpg" height="100%" width="100%" alt="">
+            <div class="phoneVideo">
+                <video controls poster="thumbnail.jpg" style="outline: none;">
+                    <source src="sampleVideoResize.mp4" type="video/mp4">
+
+                </video>
             </div>
         </div>
-        
-        <div class="content">
-        
-            <section class="scrollspy" spy-title="About Program">
-                <h2>About Program</h2>
-                <p>Image if you could reach a stage where you no longer craved sugar.</p>
-        
-                <p>We believe breaking the addiction to sugar consists of 3 forces:</p>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ducimus.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ducimus.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ducimus.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ducimus.</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nemo quos laudantium dolore blanditiis eum
-                    perspiciatis amet quaerat illum natus!</p>
-                <p><strong>We have 2 levels</strong></p>
-                <h3>Level 1:</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae vel ut sunt quidem omnis quia vitae est
-                    nesciunt, aliquam adipisci blanditiis nihil, aut sit dicta, quam eligendi ducimus ex. Nihil impedit odio
-                    itaque
-                    consequuntur. Neque consequatur repellat, tempora excepturi ipsa, voluptas sit sint soluta hic quam
-                    consectetur odio
-                    at quos.</p>
-                <h3>Level 2:</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora non officiis nemo odit cumque facere modi.
-                    Eum qui
-                    cumque enim ipsa nulla voluptatem nihil impedit similique ullam culpa eveniet, nesciunt quam repellendus
-                    placeat,
-                    ipsam quidem ducimus cupiditate odit amet quia. Quidem enim neque dignissimos ea culpa, nesciunt esse
-                    molestiae
-                    labore?</p>
-        
-            </section>
-        
-            <section class="scrollspy" spy-title="What You'll Get">
-                <h2>What You'll Get</h2>
-                <p>You will have special access to:</p>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, harum?</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, harum?</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, harum?</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, harum?</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, harum?</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, harum?</li>
-                </ul>
-            </section>
+    </div>
 
-            <section class="scrollspy" spy-title="Testimonials">
-                <h2>Testimonials</h2>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem praesentium enim sit repellat animi eos pariatur ut
-                perspiciatis, deserunt fuga quaerat magni hic eum? Aliquam, tempore ratione itaque impedit consequatur eligendi possimus
-                commodi quaerat iste explicabo maiores eveniet reiciendis consectetur eius dicta facere, nobis repellat cupiditate unde,
+    <div class="content">
+
+        <section class="scrollspy" spy-title="About Program">
+            <h2>About Program</h2>
+            <p>Image if you could reach a stage where you no longer craved sugar.</p>
+
+            <p>We believe breaking the addiction to sugar consists of 3 forces:</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ducimus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ducimus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ducimus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ducimus.</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nemo quos laudantium dolore blanditiis
+                eum
+                perspiciatis amet quaerat illum natus!</p>
+            <p><strong>We have 2 levels</strong></p>
+            <h3>Level 1:</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae vel ut sunt quidem omnis quia vitae
+                est
+                nesciunt, aliquam adipisci blanditiis nihil, aut sit dicta, quam eligendi ducimus ex. Nihil impedit odio
+                itaque
+                consequuntur. Neque consequatur repellat, tempora excepturi ipsa, voluptas sit sint soluta hic quam
+                consectetur odio
+                at quos.</p>
+            <h3>Level 2:</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora non officiis nemo odit cumque facere
+                modi.
+                Eum qui
+                cumque enim ipsa nulla voluptatem nihil impedit similique ullam culpa eveniet, nesciunt quam repellendus
+                placeat,
+                ipsam quidem ducimus cupiditate odit amet quia. Quidem enim neque dignissimos ea culpa, nesciunt esse
+                molestiae
+                labore?</p>
+
+        </section>
+
+        <section class="scrollspy" spy-title="What You'll Get">
+            <h2>What You'll Get</h2>
+            <p>You will have special access to:</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, harum?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, harum?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, harum?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, harum?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, harum?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, harum?</li>
+            </ul>
+        </section>
+
+        <section class="scrollspy" spy-title="Testimonials">
+            <h2>Testimonials</h2>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem praesentium enim sit repellat animi eos
+                pariatur ut
+                perspiciatis, deserunt fuga quaerat magni hic eum? Aliquam, tempore ratione itaque impedit consequatur
+                eligendi possimus
+                commodi quaerat iste explicabo maiores eveniet reiciendis consectetur eius dicta facere, nobis repellat
+                cupiditate unde,
                 obcaecati sapiente aspernatur."<br><br>- Mithun Mehta</p>
-                <hr>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem praesentium enim sit repellat animi eos pariatur ut
-                    perspiciatis, deserunt fuga quaerat magni hic eum? Aliquam, tempore ratione itaque impedit consequatur eligendi
-                    possimus
-                    commodi quaerat iste explicabo maiores eveniet reiciendis consectetur eius dicta facere, nobis repellat cupiditate
-                    unde,
-                    obcaecati sapiente aspernatur."<br><br>- Forum Shah</p>
-                <hr>
-            </section>
-        
-            <section class="scrollspy" spy-title="About Knowledge Partner">
-                <h2>About Knowledge Partner</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt provident quidem quos nam officia
-                    accusantium
-                    possimus dolorem est tenetur amet, recusandae dolorum quaerat, repudiandae rem reprehenderit! Tempora nulla
-                    dolorum
-                    in vitae autem quo quae? Labore amet, distinctio corporis eius at repellat quae quidem possimus aliquam
-                    animi magnam
-                    ad nam, consectetur quis et ex, laboriosam harum illum tenetur? Et, pariatur reprehenderit?
-                    <br><br>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque voluptas praesentium magni esse, similique
-                    soluta
-                    nisi cupiditate natus non fuga.
-                </p>
-        
-            </section>
-        
-            <section class="scrollspy" spy-title="Plans">
-                <h2>Plans</h2>
-                <p style="color: #6dbd46;">No Sugar Challenge by Ashdin Level 1 (Reg. 2499)</p>
-                <p>
-                    <strong>Duration:</strong> 32 Days
-                    <br>
-                    <strong>Price:</strong> Rs. 1499
-                </p>
-        
-            </section>
-        
-        
-            <section class="scrollspy" spy-title="Terms of Service">
-                <h2>Terms of Service</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quibusdam quidem atque corporis quas
-                    inventore
-                    impedit id aliquid sit quia, blanditiis illum. Hic, tempore! In dicta vero consequatur, voluptatem, quam ad
-                    optio
-                    suscipit ab odio nemo exercitationem? Enim praesentium repellat, eum minus quasi repellendus, sapiente earum
-                    ipsa
-                    sed, fugiat dicta error. Pariatur dignissimos non doloremque culpa ea doloribus sit? Repudiandae voluptates
-                    numquam
-                    fugiat ullam perferendis iusto distinctio voluptate rerum laborum iste? Ipsam dignissimos alias vitae
-                    assumenda
-                    tenetur possimus unde beatae illum numquam quam sint itaque labore, vero nisi nulla ipsa eaque, ullam
-                    consectetur
-                    ea? Porro eaque ex ad veritatis exercitationem.</p>
-            </section>
-            <div id="some" class="finalbutton hide2">
-                <a href=""><button class="joinbutton">
+            <hr>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem praesentium enim sit repellat animi eos
+                pariatur ut
+                perspiciatis, deserunt fuga quaerat magni hic eum? Aliquam, tempore ratione itaque impedit consequatur
+                eligendi
+                possimus
+                commodi quaerat iste explicabo maiores eveniet reiciendis consectetur eius dicta facere, nobis repellat
+                cupiditate
+                unde,
+                obcaecati sapiente aspernatur."<br><br>- Forum Shah</p>
+            <hr>
+        </section>
+
+        <section class="scrollspy" spy-title="About Knowledge Partner">
+            <h2>About Knowledge Partner</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt provident quidem quos nam officia
+                accusantium
+                possimus dolorem est tenetur amet, recusandae dolorum quaerat, repudiandae rem reprehenderit! Tempora
+                nulla
+                dolorum
+                in vitae autem quo quae? Labore amet, distinctio corporis eius at repellat quae quidem possimus aliquam
+                animi magnam
+                ad nam, consectetur quis et ex, laboriosam harum illum tenetur? Et, pariatur reprehenderit?
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque voluptas praesentium magni esse,
+                similique
+                soluta
+                nisi cupiditate natus non fuga.
+            </p>
+
+        </section>
+
+        <section class="scrollspy" spy-title="Plans">
+            <h2>Plans</h2>
+            <p style="color: #6dbd46;">No Sugar Challenge by Ashdin Level 1 (Reg. 2499)</p>
+            <p>
+                <strong>Duration:</strong> 32 Days
+                <br>
+                <strong>Price:</strong> Rs. 1499
+            </p>
+
+        </section>
+
+
+        <section class="scrollspy" spy-title="Terms of Service">
+            <h2>Terms of Service</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quibusdam quidem atque corporis quas
+                inventore
+                impedit id aliquid sit quia, blanditiis illum. Hic, tempore! In dicta vero consequatur, voluptatem, quam
+                ad
+                optio
+                suscipit ab odio nemo exercitationem? Enim praesentium repellat, eum minus quasi repellendus, sapiente
+                earum
+                ipsa
+                sed, fugiat dicta error. Pariatur dignissimos non doloremque culpa ea doloribus sit? Repudiandae
+                voluptates
+                numquam
+                fugiat ullam perferendis iusto distinctio voluptate rerum laborum iste? Ipsam dignissimos alias vitae
+                assumenda
+                tenetur possimus unde beatae illum numquam quam sint itaque labore, vero nisi nulla ipsa eaque, ullam
+                consectetur
+                ea? Porro eaque ex ad veritatis exercitationem.</p>
+        </section>
+        <div id="some" class="finalbutton hide2">
+            <a href=""><button class="joinbutton">
                     <p>Join Now</p>
                 </button></a>
-            </div>
-
         </div>
 
-        <footer>
+    </div>
+
+    <footer>
+        <div class="container">
             <div class="container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="footer-content text-center">
-                                <div class="footer-logo">
-                                    <img src="https://www.planmyfood.com/assets/frontend/img/logo.png" alt="">
-                                </div>
-                                <div class="privacy">
-                                    <a href="https://www.planmyfood.com/privacy">
-                                        <p>Privacy Policy | </p>
-                                    </a>
-                                    <a href="https://www.planmyfood.com/terms">
-                                        <p>Terms & Conditions</p>
-                                    </a>
-                                </div>
-                                <div class="copyright">
-                                    <p>©copyright 2017 MAJA Solutions LLP | All right reserved.</p>
-                                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="footer-content text-center">
+                            <div class="footer-logo">
+                                <img src="https://www.planmyfood.com/assets/frontend/img/logo.png" alt="">
+                            </div>
+                            <div class="privacy">
+                                <a href="https://www.planmyfood.com/privacy">
+                                    <p>Privacy Policy | </p>
+                                </a>
+                                <a href="https://www.planmyfood.com/terms">
+                                    <p>Terms & Conditions</p>
+                                </a>
+                            </div>
+                            <div class="copyright">
+                                <p>©copyright 2017 MAJA Solutions LLP | All right reserved.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
-
-        
-        <div id="myID" class="bottomMenu hide">
-            <div id="indicator"></div>
         </div>
-        
+    </footer>
 
-        <!-- <div class="container">
-            <h2>Feel free to contribute (:</h2>
-        </div> -->
 
-        <script>
-            var indicator = document.getElementById('indicator');
+    <div id="myID" class="bottomMenu hide">
+        <div id="indicator"></div>
+    </div>
 
-            var spy = new ScrollSpy(
-                {
-                    contexts_class: 'scrollspy'
-                }
-            );
+    <script>
+        var indicator = document.getElementById('indicator');
 
-            spy.Indicator({
-                element: indicator
-            });
+        var spy = new ScrollSpy(
+            {
+                contexts_class: 'scrollspy'
+            }
+        );
 
-            indicator.style.top = 'calc(35vh - ' + (indicator.offsetHeight / 2) + 'px)';
-        </script>
+        spy.Indicator({
+            element: indicator
+        });
 
-        <script>
-            myID = document.getElementById("myID");
+        indicator.style.top = 'calc(32vh - ' + (indicator.offsetHeight / 2) + 'px)';
+    </script>
 
-            var myScrollFunc = function () {
-                var y = window.scrollY;
-                if (y >= 500) {
-                    myID.className = "bottomMenu show"
-                } else {
-                    myID.className = "bottomMenu hide"
-                }
-            };
+    <script>
+        myID = document.getElementById("myID");
 
-            window.addEventListener("scroll", myScrollFunc);
-        </script>
+        var myScrollFunc = function () {
+            var y = window.scrollY;
+            if (y >= 500) {
+                myID.className = "bottomMenu show"
+            } else {
+                myID.className = "bottomMenu hide"
+            }
+        };
 
-        <script>
-            myID2 = document.getElementById("some");
+        window.addEventListener("scroll", myScrollFunc);
+    </script>
 
-            var myScrollFunc2 = function () {
-                var y = window.scrollY;
-                if (y >= 500) {
-                    myID2.className = "finalbutton show2"
-                } else {
-                    myID2.className = "finalbutton hide2"
-                }
-            };
+    <script>
+        myID2 = document.getElementById("some");
 
-            window.addEventListener("scroll", myScrollFunc2);
-        </script>
+        var myScrollFunc2 = function () {
+            var y = window.scrollY;
+            if (y >= 500) {
+                myID2.className = "finalbutton show2"
+            } else {
+                myID2.className = "finalbutton hide2"
+            }
+        };
 
-        <script>
-            var video = document.querySelector('video');
-            video.addEventListener('ended', function () {
-                video.load();
-            });
-        </script>
-    </body>
+        window.addEventListener("scroll", myScrollFunc2);
+    </script>
+
+    <script>
+        var video = document.querySelector('video');
+        video.addEventListener('ended', function () {
+            video.load();
+        });
+    </script>
+
+
+</body>
+
 </html>
