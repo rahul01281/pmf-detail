@@ -9,21 +9,52 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="ScrollSpy.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
 </head>
 
 <body>
     <script src="ScrollSpy.min.js"></script>
 
     <div class="header show" id="headerID">
-        <div class="container">
+        <div class="container" style="padding: 0 50px;">
             <img src="logo.png" height="30" width="160" alt="" />
-            <ul>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <nav>
+                <div class="show-on-mobile">
+                    <div id="mySidebar" class="sidebar">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                        <a href="#">Programs</a>
+                        <a href="#">Home</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div id="main">
+                        <button class="openbtn" id="btn" onclick="openNav()"><i class="fas fa-bars"></i></button>
+                    </div>
+                </div>
+                <div class="show-on-desktop">
+                    <ul>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "200px";
+            document.getElementById("main").style.marginLeft = "200px";
+            document.getElementsById("btn").className = "fas fa-times"
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 
     <script>
         myID3 = document.getElementById("headerID");
@@ -192,7 +223,7 @@
                 ea? Porro eaque ex ad veritatis exercitationem.</p>
         </section>
         <div id="some" class="finalbutton hide2">
-            <a href=""><button class="joinbutton">
+            <a href="#"><button class="joinbutton">
                     <p>Join Now</p>
                 </button></a>
         </div>
