@@ -208,45 +208,40 @@ body {
   font-size: 15px;
   padding: 12px 8px;
   border-left-color: #6dbd46;
-  /* border-left-color: #d81b60; */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
   #indicator ul li {
     float: left;
     width: calc(100% - 16px);
     font-size: 11px;
     padding: 12px 8px;
     border-left-color: #6dbd46;
-    /* border-left-color: #d81b60; */
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 575px) {
   #indicator ul li {
     float: left;
     width: calc(100% - 16px);
     font-size: 9px;
     padding: 12px 8px;
     border-left-color: #6dbd46;
-    /* border-left-color: #d81b60; */
   }
 }
 
-@media (max-width: 4500px) {
+@media (max-width: 480px) {
   #indicator ul li {
     float: left;
     width: calc(100% - 16px);
     font-size: 7px;
     padding: 12px 8px;
     border-left-color: #6dbd46;
-    /* border-left-color: #d81b60; */
   }
 }
 
 #indicator ul li.spy-active {
   color: #6dbd46;
-  /* color: #D81B60; */
 }
 
 section.scrollspy {
@@ -295,14 +290,12 @@ section.scrollspy p {
   font-size: 16px;
 }
 
-.joinbutton {
+/* .joinbutton {
   color: white;
-  bottom: 0;
   background: #6dbd46;
   width: 250px;
   height: 50px;
   border-radius: 10px;
-  left: 32%;
   cursor: pointer;
   font-size: 27px;
   border: none;
@@ -321,12 +314,10 @@ section.scrollspy p {
 @media only screen and (max-width: 1000px) {
   .joinbutton {
     color: white;
-    bottom: 0;
     background: #6dbd46;
     width: 20%;
     height: 50px;
     border-radius: 10px;
-    left: 32%;
     cursor: pointer;
     font-size: 27px;
     border: none;
@@ -335,9 +326,9 @@ section.scrollspy p {
 
 .joinbutton:hover {
   background-color: #4caf50;
-}
+} */
 
-/* .joinbutton {
+.joinbutton {
   position: absolute;
   left: 5%;
   position: fixed;
@@ -348,29 +339,78 @@ section.scrollspy p {
   border-radius: 10px;
   cursor: pointer;
   border: none;
+  outline: none;
 }
 
 .joinbutton p {
   color: white;
   text-align: center;
   margin: auto 0;
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Titillium Web', sans-serif;
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1200px) {
   .joinbutton p {
     color: white;
     text-align: center;
     margin: auto 0;
-    font-size: 2.3vh;
+    font-size: 2vw;
     font-family: 'Titillium Web', sans-serif;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .joinbutton {
+    position: absolute;
+    left: 5%;
+    position: fixed;
+    background: #6dbd46;
+    bottom: 30%;
+    width: 10%;
+    height: 7%;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .joinbutton {
+    position: absolute;
+    left: 5%;
+    position: fixed;
+    background: #6dbd46;
+    bottom: 25%;
+    width: 10%;
+    height: 7%;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .joinbutton {
+    position: absolute;
+    left: 5%;
+    position: fixed;
+    background: #6dbd46;
+    bottom: 30%;
+    width: 10%;
+    height: 7%;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
   }
 }
 
 .joinbutton:hover {
   background-color: #4caf50;
-} */
+}
 
 .finalbutton {
   transition: all 0.2s;
