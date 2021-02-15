@@ -366,7 +366,7 @@ section.scrollspy p {
     left: 5%;
     position: fixed;
     background: #6dbd46;
-    bottom: 30%;
+    bottom: 25%;
     width: 10%;
     height: 7%;
     border-radius: 10px;
@@ -382,7 +382,7 @@ section.scrollspy p {
     left: 5%;
     position: fixed;
     background: #6dbd46;
-    bottom: 25%;
+    bottom: 20%;
     width: 10%;
     height: 7%;
     border-radius: 10px;
@@ -398,7 +398,23 @@ section.scrollspy p {
     left: 5%;
     position: fixed;
     background: #6dbd46;
-    bottom: 30%;
+    bottom: 23%;
+    width: 10%;
+    height: 7%;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .joinbutton {
+    position: absolute;
+    left: 5%;
+    position: fixed;
+    background: #6dbd46;
+    bottom: 35%;
     width: 10%;
     height: 7%;
     border-radius: 10px;
