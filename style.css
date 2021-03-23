@@ -208,7 +208,8 @@ body {
   width: calc(100% - 16px);
   font-size: 15px;
   padding: 12px 8px;
-  border-left-color: #6dbd46;
+  /* border-left-color: #6dbd46; */
+  /* border-left: 10px solid #6dbd46; */
 }
 
 @media (max-width: 720px) {
@@ -237,12 +238,33 @@ body {
     width: calc(100% - 16px);
     font-size: 7px;
     padding: 12px 8px;
-    border-left-color: #6dbd46;
   }
-}
 
-#indicator ul li.spy-active {
-  color: #6dbd46;
+  #indicator ul {
+    float: right;
+    width: calc(100% - 16px);
+    padding: 8px;
+    display: inline-flex;
+  }
+
+  #indicator {
+    position: fixed;
+    left: 10%;
+    width: 80%;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    top: 60px !important;
+  }
+
+  .display {
+    opacity: 1 !important;
+  }
+
+  .finalbutton {
+    display: none;
+  }
 }
 
 section.scrollspy {
@@ -327,71 +349,44 @@ section.scrollspy p {
   }
 }
 
-/* @media only screen and (max-width: 960px) {
-  .joinbutton {
-    position: absolute;
-    left: 5%;
-    position: fixed;
-    background: #6dbd46;
-    bottom: 20%;
-    width: 10%;
-    height: 7%;
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-  }
-} */
-
-/* @media only screen and (max-width: 910px) {
-  .joinbutton {
-    position: absolute;
-    left: 5%;
-    position: fixed;
-    background: #6dbd46;
-    bottom: 30%;
-    width: 10%;
-    height: 7%;
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-  }
+.display {
+  opacity: 0;
 }
-
-@media only screen and (max-width: 860px) {
-  .joinbutton {
-    position: absolute;
-    left: 5%;
-    position: fixed;
-    background: #6dbd46;
-    bottom: 25%;
-    width: 10%;
-    height: 7%;
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-  }
-}
-
-@media only screen and (max-width: 710px) {
-  .joinbutton {
-    position: absolute;
-    left: 5%;
-    position: fixed;
-    background: #6dbd46;
-    bottom: 30%;
-    width: 10%;
-    height: 7%;
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-  }
-} */
 
 .joinbutton:hover {
+  background-color: #4caf50;
+}
+
+.joinbutton2 {
+  background: #6dbd46;
+  width: 50%;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.joinbutton2 p {
+  color: white;
+  text-align: center;
+  margin: auto 0;
+  font-size: 25px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+  .joinbutton2 p {
+    color: white;
+    text-align: center;
+    margin: auto 0;
+    font-size: 2vw;
+    font-family: 'Titillium Web', sans-serif;
+  }
+}
+
+.joinbutton2:hover {
   background-color: #4caf50;
 }
 
