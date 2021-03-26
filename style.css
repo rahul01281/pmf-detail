@@ -249,8 +249,8 @@ body {
 
   #indicator {
     position: fixed;
-    left: 10%;
-    width: 80%;
+    left: 5%;
+    width: 90%;
     background: white;
     border: 1px solid rgba(0, 0, 0, 0.05);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
@@ -269,11 +269,11 @@ body {
 
 section.scrollspy {
   float: right;
-  width: calc(60% - 48px);
+  width: calc(75% - 48px);
   padding: 30px 24px;
   background: white;
   /* border-radius: 10px; */
-  margin: 0px 20%;
+  margin: 0px 4%;
   /* border: 1px solid rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.1); */
   border-left: 1px solid rgba(0, 0, 0, 0.05);
@@ -282,6 +282,33 @@ section.scrollspy {
     -20px 0 20px -20px rgba(0, 0, 0, 0.1);
   text-align: left;
   direction: ltr;
+}
+
+@media (max-width: 480px) {
+  section.scrollspy {
+    float: right;
+    width: calc(80% - 48px);
+    padding: 30px 24px;
+    background: white;
+    /* border-radius: 10px; */
+    margin: 0px 10%;
+    /* border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.1); */
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 20px 0 20px -20px rgba(0, 0, 0, 0.1),
+      -20px 0 20px -20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    direction: ltr;
+  }
+
+  .joinbutton2 p {
+    color: white;
+    text-align: center;
+    margin: auto 0;
+    font-size: 20px !important;
+    font-family: 'Titillium Web', sans-serif;
+  }
 }
 
 section.scrollspy h2 {
